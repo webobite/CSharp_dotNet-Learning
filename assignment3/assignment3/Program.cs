@@ -15,12 +15,11 @@
             Console.WriteLine("Program starting...");
             Counter counter1 = Counter.GetCounterInstance();
             Counter counter2 = Counter.GetCounterInstance();
-            Console.WriteLine("Increment with counter1 : " + counter1.Increment(6));
-            Console.WriteLine("Increment with counter2 : " + counter2.Increment(9));
-            Console.WriteLine("Increment with counter1 : " + counter1.Increment(9));
-            Console.WriteLine("Decrement with counter2 : " + counter2.Decrement(9));
-            Console.WriteLine("Decrement with counter1 : " + counter1.Decrement(7));
-            Console.WriteLine("Decrement with counter2 : " + counter2.Decrement(8));
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Increment with counter-1 by 5 : " + counter1.Increment(5));
+                Console.WriteLine("Decrement with counter-2 by 3 : " + counter2.Decrement(3));
+            }
             Console.ReadLine();
 
         }
