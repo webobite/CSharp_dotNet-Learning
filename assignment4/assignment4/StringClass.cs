@@ -10,23 +10,16 @@ namespace assignment4
     {
         public static string ToCurrency(this string inputString)
         {
-            try
+            string convertedString = "";
+            if (!string.IsNullOrEmpty(inputString) && int.TryParse(inputString, out _))
             {
-                if (!string.IsNullOrEmpty(inputString))
-                {
-                    if(int.TryParse(inputString, out _))
-                    {
-                        return "$" + inputString;
-                    } else
-                    {
-                        throw new Exception("Input string value is not correct");
-                    }
-                } else
-                {
-                    throw new Exception("Input string is either null or empty");
-                }
-            } catch(Exception e) { throw new Exception(e.Message); }
-            
+                convertedString = "$" + inputString;
+                return convertedString;
+            }
+            else
+            {
+                throw new ArgumentException("Parameter cannot be null or words which cannot be parsed in Integrer");
+            }
         }
 
     }

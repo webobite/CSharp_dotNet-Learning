@@ -11,16 +11,16 @@ namespace assignment4
         static public void Main(String[] args)
         {
             
-            Console.WriteLine("Enter the Value : ");
-            string str = Console.ReadLine();
-            string result = str.ToCurrency();
-            Console.WriteLine("RESULT :::: " + result);
+            // Console.WriteLine("Enter the Value : ");
+            // string str = Console.ReadLine();
+            // string result = str.ToCurrency();
+            // Console.WriteLine("RESULT :::: " + result);
 
-            /*
-            string str1 = "124";
+            
+            string str1 = "1234";
             string result1 = str1.ToCurrency();
             Console.WriteLine("result1 :"+  result1);
-            
+            /*
             string str2 = "";
             string result2 = str2.ToCurrency();
             Console.WriteLine("result2 :" + result2);
